@@ -119,4 +119,4 @@ function checkNotAuthenticated(req, res, next) {
     }
 }
 
-app.listen(3001, () => console.log("listening at port 3001"))
+app.listen(process.env.PORT || 3001, () => console.log("listening at port"))
